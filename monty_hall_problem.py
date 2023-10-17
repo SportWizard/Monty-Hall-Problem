@@ -5,6 +5,9 @@ poop = 0
 
 choice = int(input("Choose a door (1-3): ").strip())
 
+while choice < 1 or choice > 3:
+    choice = int(input("Choose a door (1-3): ").strip())
+
 if choice == goat:
     if goat == 1:
         poop = random.choice([2, 3])
